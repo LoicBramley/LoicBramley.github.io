@@ -20,9 +20,40 @@
       font-family: 'Orbitron', sans-serif;
       text-align: center;
     }
+
+    /* NAVIGATION BAR */
+    nav {
+      width: 100%;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+    
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    /* MAIN CONTENT LAYOUT */
+    .container {
+      height: calc(100vh - 80px); /* leave space for nav */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     
     img {
-      max-width: 200px;
+      max-width: 180px;
       height: auto;
       margin-bottom: 1rem;
     }
@@ -55,7 +86,16 @@
   </style>
 </head>
 <body>
-  <img src="22c-UK-digital-PP.jpg" alt="Logo or Retro Image" />
+  
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  
+  <img src="22c-UK-digital-PP.jpg" alt="portrait" />
   <h1>Loïc Bramley</h1>
   <p>I am a mathematical physics PhD student at the Maxwell Institute for Mathematical Sciences in Edinburgh working under the supervision of <a href="https://sites.google.com/view/lotte-hollands/home" target="_blank">Lotte Hollands</a> and <a href="https://www.dimoftelab.com/home" target="_blank">Tudor Dimofte</a>.</p>
 </body>
