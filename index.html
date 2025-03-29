@@ -10,28 +10,26 @@
 
   <style>
     body {
-      margin: 0;
-      background-color: fuchsia;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Orbitron', sans-serif;
-      text-align: center;
-    }
+  margin: 0;
+  background-color: fuchsia;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
 
     /* NAVIGATION BAR */
     nav {
   width: 100%;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem 0.5rem 2rem; /* top, right, bottom, left */
   display: flex;
   justify-content: flex-start;
   gap: 2rem;
   font-size: 1.2rem;
   font-style: italic;
   font-weight: bold;
-  align-items: flex-start;
+  box-sizing: border-box;
 }
     
     nav a {
@@ -46,12 +44,14 @@
 
     /* MAIN CONTENT LAYOUT */
     .container {
-      height: calc(100vh - 80px); /* leave space for nav */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
     
     img {
       max-width: 180px;
