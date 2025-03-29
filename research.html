@@ -20,7 +20,6 @@
       height: 100%;
       background-color: fuchsia;
       font-family: 'Orbitron', sans-serif;
-      text-align: center;
       overflow-x: hidden;
     }
 
@@ -55,26 +54,28 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       padding: 2rem;
-    }
-
-    h1 {
-      color: black;
-      font-size: 2.5rem;
-      font-style: italic;
-      margin-bottom: 1.5rem;
-    }
-
-    .pub {
       max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: black;
+      font-size: 2rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+      text-align: left;
+      width: 100%;
+    }
+
+    .pub, .interests {
       background-color: white;
       color: black;
       padding: 1rem 1.5rem;
       margin: 1rem 0;
       border-radius: 12px;
       font-size: 1rem;
-      text-align: left;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
@@ -99,15 +100,22 @@
 
   <!-- MAIN CONTENT -->
   <div class="container">
-    <h1>Publications</h1>
 
+    <h2>Research Interests</h2>
+    <div class="interests">
+      I am primarily interested in codifying the non-pertubative phenomena of supersymmetric field theories using the language of geometry, topology and algebra. This typically involves thinking about BPS states and categories of extended operators. 
+    </div>
+
+    <h2>Publications</h2>
     <div class="pub">
-      Loïc Bramley, Lotte Hollands, Subrabalan Murugesan. 
+      Loïc Bramley, Lotte Hollands, and Subrabalan Murugesan. 
       <em>Les Houches lectures on non-perturbative Seiberg-Witten geometry.</em> 
       arXiv:2503.21742, 2025. 
       <a href="https://arxiv.org/abs/2503.21742" target="_blank">[arXiv]</a>
     </div>
+
   </div>
 </body>
 </html>
+
 
