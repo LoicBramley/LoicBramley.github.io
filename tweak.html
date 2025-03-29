@@ -9,37 +9,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
 
   <style>
-/* === GLOBAL RESET === */
+    /* === GLOBAL RESET === */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     html, body {
-  margin: 0;
-  padding: 0;
-  background-color: fuchsia;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Orbitron', sans-serif;
-  text-align: center;
-}
+      margin: 0;
+      padding: 0;
+      background-color: fuchsia;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+    }
 
     /* NAVIGATION BAR */
     nav {
-  width: 100%;
-  padding: 1rem 2rem 0.5rem 2rem; /* top, right, bottom, left */
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-    
+      width: 100%;
+      padding: 1rem 2rem 0.5rem 2rem;
+      display: flex;
+      justify-content: flex-start;
+      gap: 2rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: bold;
+      box-sizing: border-box;
+    }
+
     nav a {
       color: black;
       text-decoration: none;
@@ -52,62 +52,39 @@
 
     /* MAIN CONTENT LAYOUT */
     .container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* ⬅️ changed from "center" */
-  align-items: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-    
-    img {
-      max-width: 180px;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    
-    h1 {
-      color: black;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 3rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    p {
-      color: black;
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      max-width: 600px;
-      padding: 0 1rem;
-    }
-    a {
-      color: black;
-      text-decoration: underline;
-      font-weight: bold;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    a:hover {
-      text-decoration: none;
-      opacity: 0.8;
+    img {
+      max-width: 90%;
+      max-height: 90vh;
+      height: auto;
     }
+
     .tweak-link {
-  color: fuchsia;
-}
+      color: fuchsia;
+    }
+
     .tweak-link:hover {
-  opacity: 0; /* or whatever effect you want */
-  text-decoration: underline;
-}
+      opacity: 0.8;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <!-- NAVIGATION BAR -->
   <nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="tweak.html" class="tweak-link">Tweak</a>
-</nav>
-  <img src="tweak.jpg" alt="Tweak Image" />
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="tweak.html" class="tweak-link">Tweak</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <img src="tweak.jpg" alt="Tweak Image" />
+  </div>
 </body>
 </html>
