@@ -52,17 +52,18 @@
 
     /* MAIN CONTENT LAYOUT */
     .container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* space between images */
+}
 
-    img {
-  max-width: 50vw;
-  max-height: 50vh;
-  width: auto;
+.container img {
+  max-width: 40vw;   /* each image takes up to 40% of viewport width */
+  max-height: 70vh;  /* prevents vertical overflow */
   height: auto;
+  width: auto;
 }
 
     .tweak-link {
@@ -85,8 +86,7 @@
   <!-- MAIN CONTENT -->
   <div class="container">
     <img src="tweak.jpg" alt="Tweak Image" />
-  </div>
-  <img src="/photo_5909256198047861736_m.jpg"/>
+    <img src="/photo_5909256198047861736_m.jpg"/>
   </div>
 </body>
 </html>
