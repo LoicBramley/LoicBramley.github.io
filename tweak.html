@@ -51,19 +51,22 @@
     }
 
     /* MAIN CONTENT LAYOUT */
-    .container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem; /* space between images */
+    .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
-.container img {
-  max-width: 40vw;   /* each image takes up to 40% of viewport width */
-  max-height: 70vh;  /* prevents vertical overflow */
+.image-grid img {
+  align-self: center;
+  width: 100%;
   height: auto;
-  width: auto;
+  object-fit: contain;
+}
+    .image-grid img:hover {
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
 }
 
     .tweak-link {
@@ -84,10 +87,9 @@
   </nav>
 
   <!-- MAIN CONTENT -->
-  <div class="container">
-    <img src="tweak.jpg" alt="Tweak Image" />
-  <div class="container">
-  <img src="/photo_5909256198047861736_m.jpg"/>
+  <div class="image-grid">
+  <img src="tweak.jpg" alt="">
+  <img src="photo_5909256198047861736_m.jpg" alt="">
 </div>
 </body>
 </html>
