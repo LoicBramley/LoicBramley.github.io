@@ -34,10 +34,13 @@
     padding: 1rem 2rem 0.5rem 2rem;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: bold;
+    box-sizing: border-box;
   }
 
   nav a {
@@ -93,6 +96,55 @@
     text-decoration: none;
     opacity: 0.8;
   }
+
+  .interests {
+    margin-bottom: 0.5rem;
+  }
+
+  .interests p:last-child {
+    margin-bottom: 0;
+  }
+
+  .email-address {
+    margin-left: auto;
+    font-size: 0.95rem;
+    font-style: normal;
+    white-space: nowrap;
+  }
+
+  .page-footer {
+    width: 100%;
+    padding: 0 2rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  }
+
+  .cv-link {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .cv-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 650px) {
+    nav {
+      gap: 1rem;
+    }
+
+    .email-address {
+      width: 100%;
+      margin-left: 0;
+      text-align: right;
+      font-size: 0.85rem;
+    }
+  }
 </style>
 </head>
 <body>
@@ -101,7 +153,7 @@
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="activity.html">Activity</a>
-    <a href="LOIC_CV_Without_Referees__V_2_ (5).pdf" target="_blank" rel="noopener">CV</a>
+    <span class="email-address">name.surname@zohomail.eu</span>
   </nav>
 
   <!-- MAIN CONTENT -->
@@ -130,6 +182,9 @@ Notes</em>
     </div>
 
   </div>
+  <footer class="page-footer">
+    <a href="LOIC_CV_Without_Referees__V_2_ (5).pdf" target="_blank" rel="noopener" class="cv-link">CV</a>
+  </footer>
 </body>
 </html>
 

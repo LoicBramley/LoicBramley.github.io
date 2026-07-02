@@ -34,10 +34,13 @@
     padding: 1rem 2rem 0.5rem 2rem;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 2rem;
     font-size: 1.2rem;
     font-style: italic;
     font-weight: bold;
+    box-sizing: border-box;
   }
 
   nav a {
@@ -95,6 +98,47 @@
     text-decoration: none;
     opacity: 0.8;
   }
+
+  .email-address {
+    margin-left: auto;
+    font-size: 0.95rem;
+    font-style: normal;
+    white-space: nowrap;
+  }
+
+  .page-footer {
+    width: 100%;
+    padding: 0 2rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  }
+
+  .cv-link {
+    color: black;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .cv-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  @media (max-width: 650px) {
+    nav {
+      gap: 1rem;
+    }
+
+    .email-address {
+      width: 100%;
+      margin-left: 0;
+      text-align: right;
+      font-size: 0.85rem;
+    }
+  }
 </style>
 </head>
 <body>
@@ -103,11 +147,16 @@
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="activity.html">Activity</a>
-    <a href="LOIC_CV_Without_Referees__V_2_ (5).pdf" target="_blank" rel="noopener">CV</a>
+    <span class="email-address">name.surname@zohomail.eu</span>
   </nav>
 
   <!-- MAIN CONTENT -->
   <div class="container">
+
+    <h2>Research visits</h2>
+    <div class="pub">
+    <a href="https://www.slmath.org/programs/381#members" target="_blank">Representation Theory Under the Influence of Quantum Field Theory</a>, SLMath, Program Associate SLMath Doctoral Fellowship, Aug. 17 to Dec. 18, 2026.
+    </div>
 
     <h2>Invited talks</h2>
     <div class="pub">
@@ -116,7 +165,7 @@
 
     <h2>Posters</h2>
     <div class="pub">
-    <a href="https://icms.ac.uk/activities/workshop/stringmath26/" target="_blank">String Math 2026</a>: <em>4d HT Tannakian QFT and BPS Yangians</em>, Edinburgh Futures Institute, Jun. 22 to Jun. 26, 2026. Poster session: Jun. 24 to Jun. 25, 2026. <a href="https://icms.ac.uk/wp-content/uploads/2026/06/Poster-list-String-Math-2026-v5.pdf" target="_blank">[poster list]</a>
+    <a href="https://icms.ac.uk/activities/workshop/stringmath26/" target="_blank">String Math 2026</a>: <em>4d HT Tannakian QFT and BPS Yangians</em>, Edinburgh Futures Institute, Jun. 22 to Jun. 26, 2026. Poster session: Jun. 24 to Jun. 25, 2026.
     </div>
 
     <h2>Local talks</h2>
@@ -148,12 +197,7 @@
     GRIFT Seminar: <em>An Introduction to equivariant cohomology</em>, MI, Sep. 26, 2023.
     </div>
 
-    <h2>Research visits</h2>
-    <div class="pub">
-    <a href="https://www.slmath.org/programs/381#members" target="_blank">Representation Theory Under the Influence of Quantum Field Theory</a>, SLMath, Program Associate SLMath Doctoral Fellowship, Aug. 17 to Dec. 18, 2026.
-    </div>
-
- <h2>Schools and Conferences</h2>
+ <h2>Conferences and Schools</h2>
     <div class="pub">
     <a href="https://sites.google.com/umass.edu/pmqftss/home" target="_blank">Physical Mathematics of QFT Summer School 2026</a>, University of Massachusetts Amherst, Jul. 20 to Jul. 24, 2026.
     </div>
@@ -186,5 +230,8 @@
     </div>
     
   </div>
+  <footer class="page-footer">
+    <a href="LOIC_CV_Without_Referees__V_2_ (5).pdf" target="_blank" rel="noopener" class="cv-link">CV</a>
+  </footer>
 </body>
 </html>
