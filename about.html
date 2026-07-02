@@ -84,6 +84,28 @@
     box-shadow: none;
   }
 
+  .education-entry {
+    display: grid;
+    grid-template-columns: 8rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .education-date {
+    padding-top: 0.1rem;
+    text-align: right;
+    font-size: 0.95rem;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .education-details {
+    min-width: 0;
+    padding-left: 1rem;
+    border-left: 2px solid black;
+  }
+
   .pub ul {
     margin: 0.6rem 0 0 1.5rem;
   }
@@ -110,6 +132,19 @@
       text-align: right;
       font-size: 0.85rem;
     }
+
+    .education-entry {
+      grid-template-columns: 5.5rem minmax(0, 1fr);
+      gap: 0.75rem;
+    }
+
+    .education-date {
+      font-size: 0.8rem;
+    }
+
+    .education-details {
+      padding-left: 0.75rem;
+    }
   }
 </style>
 </head>
@@ -127,27 +162,36 @@
   <div class="container">
 
     <h2>Education</h2>
-    <div class="pub">
-      <strong>PhD Mathematics</strong>, Heriot-Watt University, Maxwell Institute for Mathematical Sciences (MI), 2023-
-      <ul>
-        <li>Supervisors: Lotte Hollands and Tudor Dimofte.</li>
-        <li>Expected thesis submission: 2027.</li>
-        <li>EPSRC DTP Studentship, 2023-2027.</li>
-      </ul>
+    <div class="pub education-entry">
+      <div class="education-date">2023-</div>
+      <div class="education-details">
+        <strong>PhD Mathematics</strong>, Heriot-Watt University, Maxwell Institute for Mathematical Sciences (MI).
+        <ul>
+          <li>Supervisors: Lotte Hollands and Tudor Dimofte.</li>
+          <li>Expected thesis submission: 2027.</li>
+          <li>EPSRC DTP Studentship, 2023-2027.</li>
+        </ul>
+      </div>
     </div>
-    <div class="pub">
-      <strong>MMathPhys Mathematical &amp; Theoretical Physics</strong>, University of Oxford, Pembroke College, 2021-2022.
-      <ul>
-        <li>Distinction.</li>
-      </ul>
+    <div class="pub education-entry">
+      <div class="education-date">2021-2022</div>
+      <div class="education-details">
+        <strong>MMathPhys Mathematical &amp; Theoretical Physics</strong>, University of Oxford, Pembroke College.
+        <ul>
+          <li>Distinction.</li>
+        </ul>
+      </div>
     </div>
-    <div class="pub">
-      <strong>BA Physics</strong>, University of Oxford, Pembroke College, 2017-2021.
-      <ul>
-        <li>First Class.</li>
-        <li>Pembroke College Scholarship for students performing at first class level, awarded annually, 2018-2021.</li>
-        <li>Best Part A Individual Presentation, The Topology of Surfaces, Pembroke College, 2019.</li>
-      </ul>
+    <div class="pub education-entry">
+      <div class="education-date">2017-2021</div>
+      <div class="education-details">
+        <strong>BA Physics</strong>, University of Oxford, Pembroke College.
+        <ul>
+          <li>First Class.</li>
+          <li>Pembroke College Scholarship for students performing at first class level, awarded annually, 2018-2021.</li>
+          <li>Best Part A Individual Presentation, The Topology of Surfaces, Pembroke College, 2019.</li>
+        </ul>
+      </div>
     </div>
 
   </div>
